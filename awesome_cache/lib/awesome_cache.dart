@@ -1,0 +1,12 @@
+library awesome_cache;
+export 'cache_manager.dart' show CacheManager;
+export 'cache_manager_option.dart' show CacheManagerOption;
+export 'cache_implement.dart' show CacheImplement;
+export 'cache_entry_option.dart' show CacheEntryOption;
+export 'cache_option.dart' show CacheOption;
+export 'cache_serializer.dart'show CacheSerializer;
+export 'cache_extension.dart' show CacheExtension,CacheTypedExtension;
+export 'key_builder.dart' show KeyBuilder;
+export 'cache_interface.dart';
+export 'sqflite/sqflite_database.dart' show initInMemorySqfilteCache,initFileSqfilteCache;
+export 'couchbase/couchbase_database.dart' show initCouchbaseCache;
