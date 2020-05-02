@@ -170,7 +170,7 @@ class CouchbaseStore extends CacheStore {
         }
       }
     };
-
+    //TODO release BehaviorSubject
     return _couchDb.buildObservableQueryResponse(stream, query, processResults).stream;
   }
 

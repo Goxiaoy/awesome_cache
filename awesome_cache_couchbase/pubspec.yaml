@@ -1,4 +1,4 @@
-name: awesome_cache
+name: awesome_cache_couchbase
 description: A new Flutter package project.
 version: 0.0.1
 author:
@@ -10,22 +10,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  floor: ^0.11.0
-  rxdart: ^0.23.1
-  logging: ^0.11.4
+  couchbase_lite: ^2.7.0+3
+  awesome_cache:
+    path: ../awesome_cache
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  floor_generator: ^0.11.0
   test: ^1.5.3
-  build_runner: ^1.7.3
-  sqflite_ffi_test:
-    git:
-      url: git://github.com/tekartik/sqflite_more
-      ref: dart2
-      path: sqflite_ffi_test
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

@@ -9,4 +9,3 @@ export 'cache_extension.dart' show CacheExtension,CacheTypedExtension;
 export 'key_builder.dart' show KeyBuilder;
 export 'cache_interface.dart';
 export 'sqflite/sqflite_database.dart' show initInMemorySqfilteCache,initFileSqfilteCache;
-export 'couchbase/couchbase_database.dart' show initCouchbaseCache;
