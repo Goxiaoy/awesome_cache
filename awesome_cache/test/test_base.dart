@@ -12,11 +12,12 @@ Future startUp() async{
 
 Future startUpBase() async {
   TestWidgetsFlutterBinding.ensureInitialized();
-  sqfliteFfiTestInit();
-  Sqflite.devSetDebugModeOn(true);
   Logger.root.level =Level.FINE;
   Logger.root.onRecord.listen((LogRecord rec) {
     print(
         '[${rec.level.name}][${rec.time}][${rec.loggerName}]: ${rec.message}');
   });
+  sqfliteFfiTestInit();
+  Sqflite.devSetDebugModeOn(true);
+
 }
