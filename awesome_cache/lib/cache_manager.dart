@@ -39,6 +39,9 @@ class CacheManager{
 
   Timer _cleanExpireTimer;
   void _startExpireTimer(CacheManagerOption option){
+    //TODO automatically adjust timer and batch size
+    //1. 过期的数量过多,加快清理的速度，过期的数量少，减慢清理的速度
+    //2. 动态调整batch size,因为像有些数据库，sqlite是会加锁的，如果读写速度比较频繁，降低batch size,如果比较空闲，则提高batch size
     _cleanExpireTimer=Timer.periodic(option.cleanExpireInterval, (a) async=>await cleanCacheJob(option));
   }
 
